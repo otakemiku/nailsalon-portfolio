@@ -1,0 +1,719 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/bg.jpeg') no-repeat fixed left bottom;
+  background-size: cover;
+  /* ↓自分で入れた */
+  margin: 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: 'Playfair Display', serif;
+}
+#header {
+  color: #fff;
+}
+.site-title-sub {
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+  font-size: 2.2rem;
+  opacity: 0.8;
+}
+.site-title {
+  margin: 120px 0 0;
+  font-size: 5.6rem;
+  letter-spacing: 3px;
+}
+.site-title::before,
+.site-title::after {
+  content: "";
+  display: inline-block;
+  width: 130px;
+  height: 2px;
+  margin: 0 10px;
+  background-color: #fff;
+  vertical-align: middle;
+}
+.site-description {
+  font-size: 2.5rem;
+  opacity: 0.8;
+  margin-top: 35px;
+  text-shadow: 1px 2px 4px #fdfdfd93;
+}
+span {
+  font-weight: bold;
+  text-shadow: 1px 2px 3px #acabab;
+}
+.button {
+  display: inline-block;
+  width: 220px;
+  padding: 18px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #1A1A1A;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
+  opacity: 0.7;
+}
+.button:hover {
+  opacity: 1;
+  transition: 1s;
+}
+.button {
+  margin: 180px 30px 230px;
+}
+
+/* About */
+
+.about {
+  padding: 40px;
+  height: 550px;
+  background-color: #F5F5F5;
+}
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: #1A1A1A;
+}
+.heading::before,
+.heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #1A1A1A;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+/* サービス */
+  /* バイオジェル */
+.survice {
+  background-color: #E2E8E5;
+  height: 1400px;
+  padding: 40px 0 30px;
+}
+.wrapper {
+  margin: 10px 250px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container-heading {
+  display: inline-block;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  padding: 15px 20px;
+  border: 1px solid #D8BCAD;
+  background-color: #F5F5F5;
+}
+.bio-description {
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.bio-img {
+  width: 400px;
+  margin-top: 50px;
+  display: inline-block;
+  box-shadow: 20px 20px 0 #eee4c9;
+}
+
+/* フィルイン */
+
+.fillin-description {
+  margin-right: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.fillin-img {
+  width: 400px;
+  margin-top: 50px;
+  display: block;
+  box-shadow: 20px 20px 0 #eee4c9;
+}
+
+/* ギャラリー */
+
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 5%;
+  margin-bottom: 50px;
+}
+.galary {
+  background-color: #F5F5F5;
+  padding: 40px 300px 30px;
+  margin: 0;
+}
+.galary-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  box-shadow: 10px 10px 0 #eee4c9;
+}
+
+
+/* 価格表 */
+
+.price {
+  background-color: #E2E8E5;
+  height: 750px;
+  padding: 40px 0 50px;
+}
+
+table {
+  line-height: 2.5;
+  border-collapse: collapse;
+  margin: 20px auto;
+  padding: 0;
+  width: 800px;
+  table-layout: fixed;
+  box-shadow: 20px 20px 0 #bec7b8;
+}
+
+table tr {
+  background-color: #fff;
+  padding: .35em;
+  border-bottom: 1px solid #bbb;
+}
+table thead{
+  border-bottom: 5px solid #3071bb;
+}
+table tr:last-child{
+   border-bottom: none
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+  color: black;
+}
+table th:last-child,
+table td:last-child{
+    border: none;
+}
+tbody th {
+    color: #3071bb;
+}
+.txt{
+   text-align: left;
+   color: black;
+}
+
+
+/* Other */
+
+.other {
+  background-color: #F5F5F5;
+  height: 400px;
+  padding: 40px 0 50px;
+}
+.other-description {
+  color: #1A1A1A;
+}
+.other-content {
+  padding: 40px 0 30px;
+  height: 450px;  
+  background: linear-gradient(to top, transparent 0%, transparent 70%, #F5F5F5 100%), url('../images/nail7.jpeg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* アクセス */
+
+#access {
+  height: 680px;
+  background-color: #F5F5F5;
+  margin: 0;
+  padding: 40px 0;
+}
+.access-info {
+  width: 30%;
+  margin-top: 30px;
+}
+.access-info p {
+  margin: 25px 0 0;
+  font-size: 15px;
+}
+.access-map {
+  margin-top: 30px;
+  width: 400;
+}
+h4 {
+  font-size: 2rem;
+}
+
+/* コンタクト */
+
+.contact {
+  height: 1000px;
+  padding-top: 40px ;
+  background-color: rgba(176, 185, 190, 0.767);
+  margin: 0;
+}
+.contact-form {
+  width: 30%;
+  margin: 10px auto 0;
+}
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form input[type=date],
+.contact-form input[type=time],
+.contact-form input[type=tel] {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #1A1A1A;
+  width: 100%;
+  padding: 15px;
+}
+.contact-form input[type=time],
+.contact-form input[type=date] {
+  width: 50%;
+}
+.select {
+  display: block;
+  margin: 0 0 20px;
+  color: #1A1A1A;
+  font-size: 15px;
+}
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+}
+input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  cursor: pointer;
+  color: #1A1A1A;
+  border-radius: 10px;
+  background-color: rgba(218, 162, 141, 0.678);
+  font-size: 18px;
+}
+input[type=submit]:hover {
+  background-color: rgb(231, 154, 126);
+  transition: .7s;
+}
+
+/* フッター */
+
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  background-color:#F5F5F5;
+  font-size: 1.3rem;
+}
+li {
+  display: inline-block;
+}
+ul {
+  display: flex;
+}
+.footer p {
+  margin: 0 auto;
+}
+.footer-contents li {
+  list-style: none;
+  margin: 0.5rem;
+}
+.flowbtn {
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  text-decoration: none;
+  transition: .5s;
+  background-color: #444;
+  color: #fff;
+  }
+.flowbtn i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  }
+.flowbtn.fl_tw2:hover{
+  background: linear-gradient(135deg, #13f1fc 0%,#0470dc 100%);
+  }
+.flowbtn.insta_btn2:hover{
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  }
+.flowbtn.fl_fb2:hover{
+  background: -webkit-linear-gradient(top, #5c80c6 0%, #34528c 74%);	
+  background: linear-gradient(to bottom, #5c80c6 0%, #34528c 74%);
+  }
+  
+/* _____________________________________ */
+/* 斜め配置 */
+
+.service {
+  padding: 10px 0 40px 0;
+  background-color: #191970;
+  color: #ccc;
+}
+.about {
+  position: relative;
+  padding: 20px 0 30px 0;
+}
+.about::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 0 100vw ;
+  border-color: transparent  transparent  transparent #E2E8E5;
+}
+/* ____________ */
+
+.price {
+  padding: 10px 0 40px 0;
+  background-color: #E2E8E5;
+  color: #ccc;
+}
+.galary {
+  position: relative;
+  padding: 20px 0 30px 0;
+}
+.galary::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 40px 100vw ;
+  border-color: transparent  transparent  #E2E8E5 transparent ;
+}
+/* _____________ */
+
+.other {
+  padding: 10px 0 40px 0;
+  height: 300px;
+  background-color: #f5f5f5;
+  color: #ccc;
+}
+.price {
+  position: relative;
+  padding: 20px 0 30px 0;
+}
+.price::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 0 100vw ;
+  border-color: transparent  transparent  transparent #F5F5F5;
+}
+/* __________________________________ */
+
+/* スマホ表示 */
+
+@media (max-width: 575px) {
+  body {
+    /* background: url('../images/bg.jpeg') no-repeat fixed left bottom; */
+    background-image: url('../images/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    font-size: 1.3rem;
+  }
+  header {
+    height: 80vh;
+  }
+  .site-title::before,
+  .site-title::after {
+    display: block;
+    width: 85%;
+    margin: 10px auto;
+  }
+  .site-title-sub {
+    font-size: 1.7rem;
+  }
+  .site-title {
+    margin-top: 100px;
+    font-size: 5rem;
+  }
+  .site-description {
+    font-size: 1.8rem;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 2.5rem;
+  }
+  .buttons {
+    margin-top: 100px;
+  }
+  .button {
+    margin: 5px 0 20px;
+  }
+  .button:hover {
+    opacity: 1;
+  }
+  
+  /* About */
+  
+  .heading {
+    font-size: 2.5rem;
+  }
+  .about {
+    padding: 20px 15px 30px;
+    margin-top: 100px;
+  }
+  
+  /* Survice  */
+  
+  .survice {
+    height: 1800px;
+    background-color: #E2E8E5;
+  }
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .bio-description {
+    margin: 20px auto 50px;
+    order: 2;
+  } 
+  .bio-img {
+    width: 85vw;
+    margin: 30px auto;
+    order: 1;
+  }
+  .container-heading {
+    width: 80vw;
+  }
+  .fillin-description {
+    margin: 20px auto 50px;
+    order: 4;
+  }
+  .fillin-img {
+    width: 85vw;
+    margin: 0 auto;
+    order: 3;
+  }
+  
+  /* ギャラリー */
+  
+  .grid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* 価格表 */
+
+  .price {
+    height: 900px;
+    background-color: #E2E8E5;
+  }
+  table {
+    border: 0;
+    width:100%;
+    height: 3000px;
+    box-shadow: none;
+  }
+  table th{
+    display: block;
+    border-right: none;
+    border-bottom: 5px solid #3071bb;
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 2em;
+  }
+  table td {
+    border-bottom: 1px solid #bbb;
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: .625em .625em .625em 4em;
+    border-right: none;
+  }
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  
+  /* Other */
+  
+  .other-content {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 0;
+  }
+  .other {
+    padding-bottom: 0;
+    background-color: #f5f5f5;
+  }
+  iframe {
+    width: 100%;
+  }
+  
+  /* Access */
+  
+  .access-info {
+    width: 100vw;
+    margin: 0 auto 30px;
+  }
+  .access-map {
+    margin-top: 10px;
+  }
+  
+  /* Contast */
+  
+  .contact-form {
+    width: 80vw;
+  }
+  .contact {
+    padding-top: 100px;
+    height: 1100px;
+    margin-bottom: 0;
+  }
+  
+}
+
+/* タブレット表示 */
+
+@media (min-width: 575px) and (max-width: 780px)  {
+   body {
+     /* background: url('../images/bg.jpeg') no-repeat fixed left bottom; */
+     background-image: url('../images/bg.jpeg');
+     background-position: center;
+     background-size: cover;
+   }
+  .survice {
+    height: 2300px;
+    background-color: #E2E8E5;
+  }
+  .container {
+    flex-direction: column;
+    margin: 0;
+  }
+  .bio-description {
+    margin: 20px auto 50px;
+    order: 2;
+  } 
+  .bio-img {
+    width: 70vw;
+    margin: 30px auto;
+    order: 1;
+  }
+  .container-heading {
+    width: 80vw;
+  }
+  .fillin-description {
+    margin: 20px auto 50px;
+    order: 4;
+  }
+  .fillin-img {
+    width: 70vw;
+    margin: 30px auto 30px;
+    order: 3;
+  }
+
+  .price {
+    height: 900px;
+    background-color: #E2E8E5;
+  }
+  table {
+    border: 0;
+    width:100%;
+    height: 3000px;
+    box-shadow: none;
+  }
+  table th{
+    display: block;
+    border-right: none;
+    border-bottom: 5px solid #3071bb;
+    padding-bottom: .6em;
+    margin-bottom: .6em;
+  }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 2em;
+  }
+  table td {
+    border-bottom: 1px solid #bbb;
+    display: block;
+    text-align: right;
+    position: relative;
+    padding: .625em .625em .625em 4em;
+    border-right: none;
+  }
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .tbody {
+    /* height: 2000px; */
+  }
+  .access-info {
+    width: 100vw;
+    margin: 0 auto 30px;
+  }
+  .access-map {
+    margin-top: 10px;
+  }
+
+}
