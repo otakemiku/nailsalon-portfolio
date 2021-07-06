@@ -16,7 +16,7 @@ body {
   font-size: 1.4rem;
   font-family: 'Playfair Display', serif;
 }
-body:before{
+body:before {
   content: "";
   display: block;
   position: fixed;
@@ -155,6 +155,7 @@ span {
 .fillin-img {
   width: 400px;
   margin-top: 50px;
+  margin-bottom: 30px;
   display: block;
   box-shadow: 20px 20px 0 #eee4c9;
 }
@@ -452,10 +453,10 @@ ul {
 
 @media (max-width: 575px) {
   body {
-    /* background: url('../images/bg.jpeg') no-repeat fixed left bottom; */
+    /* background: url('../images/bg.jpeg') no-repeat fixed left bottom;
     background-image: url('../images/bg.jpeg');
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     font-size: 1.3rem;
   }
   header {
@@ -522,6 +523,7 @@ ul {
   }
   .container-heading {
     width: 80vw;
+   
   }
   .fillin-description {
     margin: 20px auto 50px;
@@ -529,7 +531,7 @@ ul {
   }
   .fillin-img {
     width: 85vw;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     order: 3;
   }
   
@@ -539,6 +541,23 @@ ul {
     margin-right: 0;
     margin-left: 0;
   }
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    margin-top: 5%;
+    margin-bottom: 50px;
+  }
+  .item {
+    min-width: 160px;
+  }
+  .galary-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 #eee4c9;
+  }
+
 
   /* 価格表 */
 
@@ -633,12 +652,12 @@ ul {
 /* タブレット表示 */
 
 @media (min-width: 575px) and (max-width: 780px)  {
-   body {
-     /* background: url('../images/bg.jpeg') no-repeat fixed left bottom; */
+   /* body {
+     background: url('../images/bg.jpeg') no-repeat fixed left bottom;
      background-image: url('../images/bg.jpeg');
      background-position: center;
      background-size: cover;
-   }
+   } */
   .survice {
     height: 2300px;
     background-color: #E2E8E5;
@@ -656,9 +675,6 @@ ul {
     margin: 30px auto;
     order: 1;
   }
-  .container-heading {
-    width: 80vw;
-  }
   .fillin-description {
     margin: 20px auto 50px;
     order: 4;
@@ -668,6 +684,29 @@ ul {
     margin: 30px auto 30px;
     order: 3;
   }
+
+  .grid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    margin-top: 5%;
+    margin-bottom: 50px;
+  }
+  .item {
+    min-width: 160px;
+  }
+  .galary-img {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    box-shadow: 10px 10px 0 #eee4c9;
+  }
+
+
 
   .price {
     height: 900px;
@@ -716,9 +755,6 @@ ul {
   }
   table td:last-child {
     border-bottom: 0;
-  }
-  .tbody {
-    /* height: 2000px; */
   }
   .access-info {
     width: 100vw;
