@@ -1,242 +1,453 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="Ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <title>シングルページレイアウト</title>
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:700,400">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>あにまるニューライフ</title>
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="icon" href="images/logo.png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/fadein.css">
-  <link rel="stylesheet" href="js/script.js">
-  <link rel="icon" href="images/naillogo.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/fadein.css">
+  <link rel="stylesheet" href="">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-  <div class="humberger-menu">
-  <input type="checkbox" id="input">
-  <label for="input"><div class="line"></div><div class="line"></div><div class="line"></div></label>
-  <div class="menu-content" id="menu-content">
-    <ul class="navigation">
-      <!-- <li><a href="#about">About</a></li><br> -->
-      <li><a href="#survice">Survice</a></li><br>
-      <li><a href="#galary">Galary</a></li><br>
-      <li><a href="#price">Price</a></li><br>
-      <li><a href="#other">Other</a></li><br>
-      <li><a href="#access">Access</a></li><br>
-      <!-- <li><a href="#contact">Contact</a></li> -->
-    </ul>
-  </div>
-  </div>  
-
-  <header id="header">
-    <h1 class="site-title">Aimer le soi</h1>
-    <p class="site-title-sub">private nail salon</p>
-    <p class="site-description">自づめをいたわり、こだわりをのせる。
-    </p>
-    <div class="buttons">
-      <a class="button fadein" href="#about">Aimer le soi について</a>
-      <a class="button fadein" href="#contact">サロンの予約をする</a>
+  <header>
+    <div class="top-header">
+      <div class="left-header">
+        <ul class="snsbtniti">
+          <li><a href="#" class="flowbtn fl_tw1"
+            ><i class="fab fa-twitter"></i><div>Twitter</div></a></li>
+            <li><a href="#" class="flowbtn insta_btn1"><i class="fab fa-instagram"></i><div>Instagram</div></a></li>
+            <li><a href="#" class="flowbtn fl_fb1"><i class="fab fa-facebook-f"></i><div>Facebook</div></a></li>
+        </ul>
+      </div>
+      <div class="center-header">
+        <h1 class="page-title"><a href="#">あにまるニューライフ<img class="page-logo" src="images/page-logo.png" alt=""></h1>
+          <p class="sub-page-title">保護犬・保護猫の里親マッチングサイト</p></a>
+      </div>
+      <div>
+        <ul class="right-header">
+          <li><a class="signbtn" href="#"><i class="fas fa-user-plus"></i><div>会員登録</div></a></li>
+          <li><a href="#"><i class="fas fa-sign-in-alt"></i><div>ログイン</div></a></li>
+        </ul>
+      </div>
     </div>
   </header>
-  <section id="about" class="about">
-   <h2 class="heading">About.</h2> 
-   <div class="fadein">
-     <p>Aimer le soi (ｴﾒ ﾙ ｿﾜ）は、</p>
-     <p>巻き爪、二枚爪などでお悩みのお客様も</p>
-      <p>当店自慢のケアで、自爪をいたわりながらネイルを楽しんでいただける</p>
-     <p>完全プライベートネイルサロンです。</p>
-     <br>
-     <p>JNAジェルネイル技能検定上級取得済みのプロのネイリストが</p>
-     <p>健康的で美しい自爪を守りつつ、</p><p>こだわりのデザインも思うがままに実現いたします。</p>
-     <br>
-      <span>あなたの指先を、世界でたった一つのアートにしませんか？</span>
-   </div>
 
-  </section>
+  <nav class="menu">
+    <ul class="nav-items wrapper">
+      <li class="nav-item"><a href="#aboutus">私たちについて</a></li>
+      <li class="nav-item"><a href="#news">ニュース</a></li>
+      <li class="nav-item"><a href="#find-dog">保護犬を探す</a></li>
+      <li class="nav-item"><a href="#find-cat">保護猫を探す</a></li>
+      <li class="nav-item"><a href="#">お迎えするまでの流れ</a></li>
+    </ul>
+  </nav>
 
-  <!-- サービス -->
+  <div class="top-page">>
+    <p class="catchcopy fadein">第二の人生を、<br>共に生きる。</p>
+    <p class="sub-catchcopy fadein">保護犬・保護猫の飼い主さまを募集しています</p>
+  </div>
 
-  <section id="survice" class="survice">
-    <h2 class="heading">Survice.</h2>
-    <div class="container wrapper">
-      <div class="bio-description fadein left">
-        <h3 class="container-heading" style="min-width: 300px;">爪に優しいジェル</h3>
-        <p>当店では、ソフトジェルの一種である</p><p>バイオジェルを使用しております。</p>
-        <p>ネイルオフする際、爪を削る必要がなく、</p><p>専用の溶液で落とすことができるため、</p>
-        <p>従来のジェルよりも自づめへのダメージが少ないのが特徴です。</p>
-      </div>
-      <img class="bio-img fadein left" src="images/nail2.jpg" alt="バイオジェル画像">
-    </div>
-
-    <div class="container wrapper">
-      <img class="fillin-img fadein right" src="images/nail.jpg" alt="フィルイン画像">
-      <div class="fillin-description fadein right">
-        <h3 class="container-heading" style="min-width: 300px;">特殊なお直し法</h3>
-          <p>当店でネイルオフをされる際、</p>
-          <p>”フィルイン”と呼ばれる手法を取り入れております。</p>
-          <p>フィルインとは、ベースのジェルを一層残し、</p>
-          <p>新しく生えてきた部分にのみベースジェルをのせる手法です。</p>
-          <p>自爪を削るのを最小限に抑えることができます。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ギャラリー -->
-
-  <section id="galary" class="galary grid-wrapper">
-    <h2 class="heading">Galary.</h2>
-      <div class="grid grid-wrapper">
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary.jpeg" alt="">
-          <p>ニュアンスネイル</p>
+  <main>
+    <h3 class="news-header">NEWS</h3>
+      <ul class="scroll-list" id="news">
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time><span class="category">Event</span> 
+            <span class="title">イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">News</span>
+            <span class="title">ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">News</span>
+            <span class="title">ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">News</span>
+            <span class="title">ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">Event</span>
+            <span class="title">イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">News</span>
+            <span class="title">ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">News</span>
+            <span class="title">ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容ニュース内容</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">Event</span>
+            <span class="title">イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報</span>
+          </a>
+        </li>
+        <li class="scroll-item">
+          <a href="#">
+            <time class="date" datetime="2021-06-27">2021.06.27</time>
+            <span class="category">Event</span>
+            <span class="title">イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報イベント情報</span>
+          </a>
+        </li>
+      </ul>
+    
+    <div class="aboutus" id="aboutus">
+      <h3 class="">私たちについて</h3>
+      <div class="aboutus-contents">
+        <div>
+          <img class="aboutus-contents-img fadein down" src="images/aboutus-img.jpg" alt="私たちについて画像">
         </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary2.jpeg" alt="">
-          <p>ワンカラーネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary3.jpeg" alt="">
-          <p>フレンチネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary.jpeg" alt="">
-          <p>ニュアンスネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary2.jpeg" alt="">
-          <p>ワンカラーネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary3.jpeg" alt="">
-          <p>フレンチネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary.jpeg" alt="">
-          <p>ニュアンスネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary2.jpeg" alt="">
-          <p>ワンカラーネイル</p>
-        </div>
-        <div class="item">
-          <img class="galary-img" src="images/nailgalary3.jpeg" alt="">
-          <p>フレンチネイル</p>
-      </div>
-    </div>
-  </section>
-
-<!-- 価格 -->
-
-  <section id="price" class="price">
-    <h2 class="heading">Price.</h2>
-      <table class="fadein">
-        <thead>
-            <tr>
-                <td></td>
-                <th scope="col">内容</th>
-                <th scope="col">価格(税込）
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>ハンドネイル</th>
-                <td data-label="内容" class="txt">ワンカラー、フレンチ、ニュアンスネイルなどご希望に沿ってお見積もりいたします。</td>
-                <td data-label="価格">¥5,500~¥11,000</td>
-            </tr>
-            <tr>
-                <th>フットネイル</th>
-                <td data-label="内容" class="txt">お勤め先がネイル禁止のお客様でも、フットネイルならお楽しみいただけます。</td>
-                <td data-label="価格">¥6,600~¥12,000</td>
-            </tr>
-            <tr>
-                <th>ネイルケア（オフ込み）</th>
-                <td data-label="内容" class="txt">甘皮除去、マッサージ、ネイルオフをさせていただきます。</td>
-                <td data-label="価格">¥3,300</td>
-            </tr>
-        </tbody>
-    </table>   
-
-  </section>
-
-<!-- Other -->
-
-  <section class="other" id="other">
-    <h2 class="heading">Other.</h2>
-    <div class="other-description fadein">
-      <h4>ブライダルネイルも承っております</h4>
-      </p>忘れたくない大切な日は、</p>
-      <p>指先まで洗練されたネイルを。</p>
-    </div>
-  </section>
-
-    <div class="other-content">
-    </div>
-
-<!-- アクセス -->
-
-  <section id="access" class="wrapper access">
-    <h2 class="heading">Access.</h2>
-      <div class="wrapper container">
-        <div class="access-info fadein">
-          <h4>Aimer le soi</h4>
-          <p>
-            住所： 愛知県岡崎市矢吹町XXX<br>
-            電話： XXXX-XX-XXXX<br>
-            営業時間： 10:00 ~ 20:00<br>
-            休日： 毎週水曜日
-          </p>
-        </div>
-        <div class="access-map fadein">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.1543299343634!2d137.1689274315916!3d34.95274039012135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004bd26a49807b1%3A0x735b82f5f6f3f55a!2z44CSNDQ0LTA4NjIg5oSb55-l55yM5bKh5bSO5biC5ZC555-i55S6!5e0!3m2!1sja!2sjp!4v1620890193513!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="aboutus-description fadein">
+          <h5>
+            <span>あにまるニューライフは、保護犬・保護猫と里親になりたい方をつなぐマッチングサイトです。</span>
+            <span>私たちは、保護犬・保護猫に新しい飼い主さんと第二の人生を歩んでもらうことで、殺処分問題の解決を目指しています。
+            </span>
+            <span>さまざまな事情でペットを飼い続けることができなくなってしまった方、ペット保護活動者など約100団体が当サイトに登録しています。</span>
+            <span>会員登録（無料）ですぐに里親申し込みをすることが可能です。</span>
+            <span>※なお、保護犬・保護猫をお迎えするには厳密な審査が必要です。</span>
+          </h5>
+          <div class="btn signin"><a href="#">会員登録をする</a></div>
         </div>
       </div>
-  </section>
-
-<!-- コンタクト -->
-
-  <section id="contact" class="contact">
-    <h2 class="heading">Contact.</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <input type="tel" placeholder="Tel">
-      <div class="deta">
-        <h4>ご予約日時</h4>
-        <input type="date">
-        <input type="time">
+      
+      <!-- マッチング実績 -->
+      
+      <div class="matching-deta">
+        <div class="illustration">
+          <img class="fadein left" src="images/y0505.png" alt="">
+          <div class="matching-description fadein">
+            <h6>
+              <span>審査制マッチングサイト<br></span><span>全国ナンバーワン!</span>
+              <br><span>里親決定数</span><span>500件突破!</span>
+              <br><span>いつも私たちの活動にご理解いただきありがとうございます。</span>
+            </h6>
+          </div>
+          <img class="fadein right" src="images/y0506.png" alt="">
+        </div>
       </div>
-      <div class="select">
-        <h4>お申し込み内容</h4>
-          <input type="radio" name="level" >
-            ハンドネイル
-          <input type="radio" name="level" >
-            フットネイル
-          <input type="radio" name="level" >
-            ネイルケア
-      </div>
-      <textarea name="massage" cols="25" rows="8" placeholder="massage"></textarea>
-      <input type="submit" value="送信">
-    </form>
-  </section>
+      
+      
+      <!-- バナー -->
+      
+            <!-- <section class="box">
+              <a href=""><img src="images/banner.png" alt="バナー1" style="width: 30vw"></a>
+              <a href=""><img src="images/banner3.png" alt="バナー3" style="width: 30vw"></a>
+              <a href=""><img src="images/banner2.png" alt="バナー2" style="width: 30vw"></a>
+            </section> -->
 
-  <footer class="footer">
-    <div class="footer-contents">
-      <ul class="snsbtniti"></ul>
-        <li><a href="#" class="flowbtn fl_tw2"
-          ><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#" class="flowbtn insta_btn2"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#" class="flowbtn fl_fb2"><i class="fab fa-facebook-f"></i></a></li>
-      <p>&copy; sample site</p>
+      <!-- スライダー -->
+      
+      
+      <!-- 保護犬を探す -->   
+      
+      <section class="find-dog" id="find-dog">
+        <div class="heading">
+          <h3 class="find-dog-heading">保護犬を探す</h3>
+        </div>
+        
+        <div class="contents">
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          <article>
+            <a href="#">
+              <img class="dog-images" src="images/doggalary.jpeg" alt="">
+              <div class="description">
+                <h4>ビーグル</h4>
+                <p>6歳 <span class="male">♂</span>/ 中部</p>
+                <p class="sub-description">とても人懐っこい性格です。</p>
+              </div>
+            </a>
+          </article>
+          
+          <div class="btn">
+            <a href="#">里親募集一覧をみる</a>
+          </div>
+          
+        </section>
+
+        <h3 class="matching-header">マッチング成功の事例</h3>
+        <div class="slider fadein">
+            <a href="#"><img src="images/cat1.jpg" alt="画像1" >
+              <p>○○さま×たま<br>（5歳<span class="female">♀</span>）</p>
+            </a>
+            <a href="#"><img src="images/cat2.jpg" alt="画像2">
+              <p>□□さま×トラ<br>（10歳<span class="male">♂</span>）</p>
+            </a>
+            <a href="#"><img src="images/cat3.jpg" alt="画像3">
+              <p>△△さま×ちゃこ<br>（9歳<span class="male">♂</span>）</p>
+            </a>
+            <a href="#"><img src="images/dog1.jpg" alt="画像3">
+              <p>○○さま×クロ<br>（3歳<span class="female">♀</span>）</p>
+            </a>
+            <a href="#"><img src="images/dog2.jpg" alt="画像3">
+              <p>□□さま×ちろ<br>（1歳<span class="female">♀</span>）</p>
+            </a>
+            <a href="#"><img src="images/dog3.jpg" alt="画像3">
+              <p>△△さま×ぼち<br>（4歳<span class="male">♂</span>）</p>
+            </a>
+        </div>
+
+      </div>
+        
+     <!-- バナー -->
+      
+     <section class="box wrapper">
+      <a href=""><img src="images/banner.png" alt="バナー1" style="width: 30vw"></a>
+      <a href=""><img src="images/banner3.png" alt="バナー3" style="width: 30vw"></a>
+      <a href=""><img src="images/banner2.png" alt="バナー2" style="width: 30vw"></a>
+    </section>
+      
+
+<!-- 保護猫を見つける-->
+
+<section class="find-dog" id="find-cat">
+  <div class="heading">
+    <h3 class="find-dog-heading">保護猫を探す</h3>
+  </div>
+
+  <div class="contents">
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    <article>
+       <a href="#">
+        <img class="dog-images" src="images/catgalary.jpg" alt="">
+        <div class="description">
+          <h4>三毛猫</h4>
+          <p>8歳 <span class="female">♀</span>/ 関東</p>
+          <p class="sub-description">のんびりした性格です。</p>
+        </div>
+      </a>
+    </article>
+    
+    <div class="btn">
+      <a href="#">里親募集一覧をみる</a>
     </div>
+  </section>
+
+
+ <!-- コンタクト  -->
+ 
+ <h3 class="contact-heading">お問い合わせ</h3>
+ <section class="contact">
+    <!-- <div>
+      <form class="contact-form">
+        <p class="label"><span>必須</span>お名前<input type="text"></p>
+        <p class="label"><span>必須</span>メールアドレス<input type="email"></p>
+        <p class="label"><span>必須</span>お電話番号<input type="tel"></p>
+        <p class="label"><span>必須</span>お問い合わせ内容<textarea name="massage" id="" cols="20" rows="10"></textarea></p>
+        <input type="submit" value="送信する">
+      </form>
+    </div> -->
+
+    <div class="Form">
+      <div class="Form-Item">
+        <p class="Form-Item-Label">
+          <span class="Form-Item-Label-Required">必須</span>お名前
+        </p>
+        <input type="text" class="Form-Item-Input" placeholder="お名前">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+        <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+        <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+      </div>
+      <div class="Form-Item">
+        <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+        <textarea class="Form-Item-Textarea" placeholder="ご自由にご記入ください"></textarea>
+      </div>
+      <input type="submit" class="Form-Btn" value="送信する">
+    </div>
+    
+  </section>
+
+
+
+
+    </div>
+  </main>
+
+  <!-- フッター -->
+
+  <footer>
+    <div class="">
+      <p><small>&copy; sample site</small></p>
   </footer>
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/test.js"></script>
+
 </body>
 </html>
