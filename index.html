@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fadein.css">
+  <link rel="stylesheet" href="js/script.js">
   <link rel="icon" href="images/naillogo.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -36,23 +38,23 @@
     <p class="site-description">自づめをいたわり、こだわりをのせる。
     </p>
     <div class="buttons">
-      <a class="button" href="#about">Aimer le soi について</a>
-      <a class="button" href="#contact">サロンの予約をする</a>
+      <a class="button fadein" href="#about">Aimer le soi について</a>
+      <a class="button fadein" href="#contact">サロンの予約をする</a>
     </div>
   </header>
   <section id="about" class="about">
    <h2 class="heading">About.</h2> 
-   <p>Aimer le soi (ｴﾒ ﾙ ｿﾜ）は、</p>
-   <p>巻き爪、二枚爪などでお悩みのお客様も</p>
-    <p>当店自慢のケアで、自爪をいたわりながら
-    ネイルを楽しんでいただける</p>
-   <p>完全プライベートネイルサロンです。</p>
-   <br>
-   <p>JNAジェルネイル技能検定
-   上級取得済みのプロのネイリストが</p>
-   <p>健康的で美しい自爪を守りつつ、</p><p>こだわりのデザインも思うがままに実現いたします。</p>
-   <br>
-    <span>あなたの指先を、世界でたった一つのアートにしませんか？</span>
+   <div class="fadein">
+     <p>Aimer le soi (ｴﾒ ﾙ ｿﾜ）は、</p>
+     <p>巻き爪、二枚爪などでお悩みのお客様も</p>
+      <p>当店自慢のケアで、自爪をいたわりながらネイルを楽しんでいただける</p>
+     <p>完全プライベートネイルサロンです。</p>
+     <br>
+     <p>JNAジェルネイル技能検定上級取得済みのプロのネイリストが</p>
+     <p>健康的で美しい自爪を守りつつ、</p><p>こだわりのデザインも思うがままに実現いたします。</p>
+     <br>
+      <span>あなたの指先を、世界でたった一つのアートにしませんか？</span>
+   </div>
 
   </section>
 
@@ -61,18 +63,18 @@
   <section id="survice" class="survice">
     <h2 class="heading">Survice.</h2>
     <div class="container wrapper">
-      <div class="bio-description">
+      <div class="bio-description fadein left">
         <h3 class="container-heading" style="min-width: 300px;">爪に優しいジェル</h3>
         <p>当店では、ソフトジェルの一種である</p><p>バイオジェルを使用しております。</p>
         <p>ネイルオフする際、爪を削る必要がなく、</p><p>専用の溶液で落とすことができるため、</p>
         <p>従来のジェルよりも自づめへのダメージが少ないのが特徴です。</p>
       </div>
-      <img class="bio-img" src="images/nail2.jpg" alt="バイオジェル画像">
+      <img class="bio-img fadein left" src="images/nail2.jpg" alt="バイオジェル画像">
     </div>
 
     <div class="container wrapper">
-      <img class="fillin-img" src="images/nail.jpg" alt="フィルイン画像">
-      <div class="fillin-description">
+      <img class="fillin-img fadein right" src="images/nail.jpg" alt="フィルイン画像">
+      <div class="fillin-description fadein right">
         <h3 class="container-heading" style="min-width: 300px;">特殊なお直し法</h3>
           <p>当店でネイルオフをされる際、</p>
           <p>”フィルイン”と呼ばれる手法を取り入れております。</p>
@@ -131,7 +133,7 @@
 
   <section id="price" class="price">
     <h2 class="heading">Price.</h2>
-      <table>
+      <table class="fadein">
         <thead>
             <tr>
                 <td></td>
@@ -165,7 +167,7 @@
 
   <section class="other" id="other">
     <h2 class="heading">Other.</h2>
-    <div class="other-description">
+    <div class="other-description fadein">
       <h4>ブライダルネイルも承っております</h4>
       </p>忘れたくない大切な日は、</p>
       <p>指先まで洗練されたネイルを。</p>
@@ -180,7 +182,7 @@
   <section id="access" class="wrapper access">
     <h2 class="heading">Access.</h2>
       <div class="wrapper container">
-        <div class="access-info">
+        <div class="access-info fadein">
           <h4>Aimer le soi</h4>
           <p>
             住所： 愛知県岡崎市矢吹町XXX<br>
@@ -189,7 +191,7 @@
             休日： 毎週水曜日
           </p>
         </div>
-        <div class="access-map">
+        <div class="access-map fadein">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.1543299343634!2d137.1689274315916!3d34.95274039012135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6004bd26a49807b1%3A0x735b82f5f6f3f55a!2z44CSNDQ0LTA4NjIg5oSb55-l55yM5bKh5bSO5biC5ZC555-i55S6!5e0!3m2!1sja!2sjp!4v1620890193513!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
@@ -233,5 +235,8 @@
     </div>
   </footer>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
