@@ -222,6 +222,13 @@ span {
   object-fit: cover;
   box-shadow: 10px 10px 0 #eee4c9;
 }
+.galary-img:hover {
+  transform:scale(1.1,1.1);
+  transition: .8s;
+}
+.item {
+  overflow:hidden; 
+}
 
 
 /* 価格表 */
